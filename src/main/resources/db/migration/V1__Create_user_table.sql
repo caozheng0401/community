@@ -1,9 +1,9 @@
-CREATE TABLE `user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) DEFAULT NULL,
-  `account_id` varchar(50) DEFAULT NULL,
-  `token` char(36) DEFAULT NULL,
-  `gmt_create` bigint(20) DEFAULT NULL,
-  `gmt_modified` bigint(20) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+create table user
+(
+    id int auto_increment primary key not null,
+    account_id varchar(100),
+    name varchar(50),
+    token varchar(36),
+    gmt_create bigint,
+    gmt_modified bigint
+);
